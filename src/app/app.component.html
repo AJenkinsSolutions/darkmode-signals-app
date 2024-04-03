@@ -1,6 +1,11 @@
 
-<div class="dark">
+
+
+
+<div [ngClass]="themeService.themeSignal()">
   <app-header></app-header>
+  <div class="content min-h-screen">
+    <p class="">hello</p> 
+  </div>
     <router-outlet></router-outlet>
 </div>
-
