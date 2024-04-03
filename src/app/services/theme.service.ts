@@ -7,7 +7,7 @@ export class ThemeService {
 
   constructor() { }
 
-  themeSignal = signal<string>("dark")
+  themeSignal = signal<string>('dark')
 
   setTheme(theme: string): void{
 
@@ -16,7 +16,7 @@ export class ThemeService {
   }
 
   updateTheme(): void{
-    this.themeSignal.update((currentValue) => currentValue === "dark" ? "light": "dark");
+    this.themeSignal.update((currentValue) => currentValue === 'dark' ? 'light': 'dark');
   }
  
 }
