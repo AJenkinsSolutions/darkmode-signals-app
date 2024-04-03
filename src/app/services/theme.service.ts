@@ -7,5 +7,7 @@ export class ThemeService {
 
   constructor() { }
 
+  themeSignal = signal<string>("dark")
+
  
 }
