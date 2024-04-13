@@ -1,17 +1,21 @@
 
-
+<!-- NavBar -->
 <mat-toolbar class="flex justify-between">
   <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
     <mat-icon class="items-left">menu</mat-icon>
   </button>
  
-  
-  <span class="">My App</span>
+  <!-- Title -->
+  <h1 class="">My App</h1>
 
+  <!-- Dark mode Controls -->
   <div class="theme-control">
+
     <mat-slide-toggle checked (click)="toggleTheme()"></mat-slide-toggle>
+
     <button mat-icon-button>
       
+      <!-- Toogle Dark mode Icon -->
       @if (themeService.themeSignal() === 'dark') {
         <mat-icon>bedtime</mat-icon>
 
@@ -19,9 +23,9 @@
         <mat-icon>brightness_5</mat-icon>
 
       }
+
     </button>
+
   </div>
-    
-
-
+  
 </mat-toolbar>

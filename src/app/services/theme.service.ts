@@ -15,6 +15,9 @@ export class ThemeService {
 
   }
 
+  // Uses the update method
+  // check current then toggles to oppisite value
+  //turney operator  before ? the expression is evaulated, after(? is returned) (): == else)
   updateTheme(): void{
     this.themeSignal.update((currentValue) => currentValue === 'dark' ? 'light': 'dark');
   }

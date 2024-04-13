@@ -37,6 +37,7 @@ $dark-text-color: #333;
 
 
 // Dark mode
+// This is the vaule dynamicaly injected in the HTML using [ngclass] directive
 .dark {
   @include mat.all-component-colors($dark-theme);
 

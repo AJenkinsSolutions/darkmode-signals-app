@@ -16,9 +16,11 @@ import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 })
 export class HeaderComponent {
 
-
+  
   themeService: ThemeService = inject(ThemeService);
 
+  //Flips the dark mode switch
+  //No parameter needed
   toggleTheme(){
     this.themeService.updateTheme()
   }
